@@ -27,6 +27,7 @@ Superhero = class {
     }
 }
 
+Superheroes = [];
 Superheroes.allHeroes = [];
 Superheroes.losingHeroes = [];
 
