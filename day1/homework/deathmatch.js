@@ -31,7 +31,7 @@ Superheroes.allHeroes = [];
 Superheroes.losingHeroes = [];
 
 Superheroes.allHeroes.push(new Superhero('Superman',       'male',  'does not reveal his Kryptonite to LOSER'));
-Superheroes.allHeroes.push(new Superhero('Batman',         'male',  'flies like a man and strikes down LOSER down like a bat'));
+Superheroes.allHeroes.push(new Superhero('Batman',         'male',  'flies like a man and strikes down LOSER like a bat'));
 Superheroes.allHeroes.push(new Superhero('Spider-Man',     'male',  'disables LOSER using the power of the web'));
 Superheroes.allHeroes.push(new Superhero('Thor',           'male',  'easily smashes LOSER with his huge hammer'));
 Superheroes.allHeroes.push(new Superhero('Wonder Woman',   'female','makes LOSER wonder how GENDER was beat'));
