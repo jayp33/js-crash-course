@@ -1,5 +1,6 @@
 const red = require('ansi-red');
 const Person = require('./person');
+const Database = require('./database');
 
 console.log(red('Hello World'));
 
@@ -8,4 +9,4 @@ const gandalf = new Person('Gandalf', 99);
 
 const persons = [ jan, gandalf ];
 
-console.log(persons);
+Database.save(persons);
