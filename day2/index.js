@@ -1,17 +1,14 @@
 const red = require('ansi-red');
 
-console.log('Hello World');
+console.log(red('Hello World'));
 
-const add = (num1, num2) => num1 + num2;
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
 
-const mult = (num1, num2) => num1 * num2;
+const jan = new Person('Jan', 39);
 
-const output_add = add(3, 5);
-const output_mult = mult(3, 5);
-
-console.log('Add: ' + output_add);
-console.log('Mult: ' + output_mult);
-
-console.log(red('PANIC!!'));
-
-module.exports = { add:add, mult:mult };
+console.log(jan);
