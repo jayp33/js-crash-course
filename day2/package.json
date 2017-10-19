@@ -10,5 +10,8 @@
   "license": "ISC",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "ansi-red": "^0.1.1"
   }
 }
