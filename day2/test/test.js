@@ -7,17 +7,13 @@ describe('Array', function() {
   });
 });
 
-// var index = require('../index.js');
-// describe('Day2', function() {
-//   describe('#add()', function() {
-//     it('should return 8 when called with the parameters 3 and 5', function() {
-//       assert.equal(8, index.add(3 ,5));
-//     });
-//   });
+var Person = require('../person');
+describe('Day2', function() {
+  describe('#person()', function() {
+    it('should return 39 when asking for my age', function() {
+      const jan = new Person('Jan', 39);      
+      assert.equal(39, jan.age);
+    });
+  });
   
-//   describe('#mult()', function() {
-//     it('should return 15 when called with the parameters 3 and 5', function() {
-//       assert.equal(15, index.mult(3 ,5));
-//     });
-//   });
-// });
+});
