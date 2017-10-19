@@ -1,13 +1,7 @@
 const red = require('ansi-red');
+const Person = require('./person');
 
 console.log(red('Hello World'));
-
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
 
 const jan = new Person('Jan', 39);
 
