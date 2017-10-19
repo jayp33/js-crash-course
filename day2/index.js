@@ -1,3 +1,5 @@
+const red = require('ansi-red');
+
 console.log('Hello World');
 
 const add = (num1, num2) => num1 + num2;
@@ -9,5 +11,7 @@ const output_mult = mult(3, 5);
 
 console.log('Add: ' + output_add);
 console.log('Mult: ' + output_mult);
+
+console.log(red('PANIC!!'));
 
 module.exports = { add:add, mult:mult };
