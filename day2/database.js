@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 exports.save = (people) => {
-    console.log(people);
+    fs.writeFileSync('./data.json', 'Hello world')
 }
