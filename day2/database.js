@@ -6,6 +6,5 @@ exports.save = (people) => {
 }
 
 exports.load = (file) => {
-    const persons = fs.readFileSync(file, 'utf8');
-    console.log(persons);
+    return fs.readFileSync(file, 'utf8');
 }
