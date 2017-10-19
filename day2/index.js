@@ -10,3 +10,4 @@ const gandalf = new Person('Gandalf', 99);
 const persons = [ jan, gandalf ];
 
 Database.save(persons);
+Database.load('./data.json');
