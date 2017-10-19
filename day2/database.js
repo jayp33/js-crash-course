@@ -6,5 +6,5 @@ exports.save = (people) => {
 }
 
 exports.load = (file) => {
-    return fs.readFileSync(file, 'utf8');
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
