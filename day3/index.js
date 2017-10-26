@@ -31,3 +31,10 @@ const readFile = async (filename) => {
 //     .then(() => readFile(files[2]))
 //     .then(console.log)
 //     .then(() => console.log('finished'))
+
+const contents1 = await readFile(files[0])
+console.log(contents1)
+const contents2 = await readFile(files[1])
+console.log(contents2)
+const contents3 = await readFile(files[2])
+console.log(contents3)
