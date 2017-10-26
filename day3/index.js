@@ -1,8 +1,8 @@
-// const fs = require('fs');
+const fs = require('fs');
 
-// const files = [1,2,3]
-//     .map(number => `./files/${number}.txt`)
-//     .map(filename => fs.readFileSync(filename, 'utf8'))
+const files = [1,2,3]
+    .map(number => `./files/${number}.txt`)
+    // .map(filename => fs.readFileSync(filename, 'utf8'))
 
 // console.log(files);
 
@@ -24,7 +24,7 @@ const readFile = (filename) => {
     });
 }
 
-readFile(file1)
-    .then(() => readFile(file2))
-    .then(() => readFile(file3))
+readFile(files[0])
+    // .then(() => readFile(file2))
+    // .then(() => readFile(file3))
     .then(() => console.log('finished'))
