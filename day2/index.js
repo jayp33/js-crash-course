@@ -12,7 +12,7 @@ jan.sayName();
 const persons = [ jan, gandalf ];
 
 Database.save(persons, err => {
-    console.log(err)
+    console.log('yes, we are!')
 });
 
 console.log('are we there yet?')
