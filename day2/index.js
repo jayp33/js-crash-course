@@ -7,6 +7,8 @@ console.log(red('Hello World'));
 const jan = new Person('Jan', 39);
 const gandalf = new Person('Gandalf', 99);
 
+jan.sayName();
+
 const persons = [ jan, gandalf ];
 
 Database.save(persons);

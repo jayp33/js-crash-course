@@ -3,4 +3,8 @@ module.exports = class Person {
         this.name = name;
         this.age = age;
     }
+
+    sayName() {
+        console.log(this.name);
+    }
 }
