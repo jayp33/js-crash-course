@@ -14,4 +14,6 @@ const persons = [ jan, gandalf ];
 Database.save(persons);
 const fileContents = Database.load('./data.json');
 
-console.log(fileContents[0].age);
+fileContents[0].sayName();
+
+//console.log(fileContents[0].age);
