@@ -15,7 +15,9 @@ Database.save(persons, err => {
     console.log('yes, we are!')
 });
 
-console.log('are we there yet?')
+setInterval(() => {
+    console.log('are we there yet?')    
+}, 1000)
 
 // const fileContents = Database.load('./data.json');
 
