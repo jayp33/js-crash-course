@@ -14,7 +14,7 @@ const files = [1,2,3]
 //     })
 // })
 
-const readFile = (filename) => {
+const readFile = async (filename) => {
     return new Promise((resolve, reject) => {
         fs.readFile(filename, 'utf8', (err, contents) => {
             if (err) return reject(err);
@@ -24,10 +24,10 @@ const readFile = (filename) => {
     });
 }
 
-readFile(files[0])
-    .then(console.log)
-    .then(() => readFile(files[1]))
-    .then(console.log)
-    .then(() => readFile(files[2]))
-    .then(console.log)
-    .then(() => console.log('finished'))
+// readFile(files[0])
+//     .then(console.log)
+//     .then(() => readFile(files[1]))
+//     .then(console.log)
+//     .then(() => readFile(files[2]))
+//     .then(console.log)
+//     .then(() => console.log('finished'))
