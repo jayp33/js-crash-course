@@ -14,3 +14,7 @@
 //     })
 // })
 
+readFile(file1)
+    .then(() => readFile(file2))
+    .then(() => readFile(file3))
+    .then(() => console.log('finished'))
