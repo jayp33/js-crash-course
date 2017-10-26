@@ -18,9 +18,9 @@ const firstPerson = new Person(fileContents[0].name, fileContents[0].age);
 
 const secondPerson = Person.create(fileContents[1]);
 
-fileContents.forEach(someone => Person.create(someone));
+const convertedPersons = fileContents.map(Person.create);
 
-firstPerson.sayName();
-secondPerson.sayName();
+convertedPersons[0].sayName();
+convertedPersons[1].sayName();
 
 //console.log(fileContents[0].age);
