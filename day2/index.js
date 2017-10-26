@@ -15,6 +15,10 @@ Database.save(persons);
 const fileContents = Database.load('./data.json');
 
 const firstPerson = new Person(fileContents[0].name, fileContents[0].age);
+
+const secondPerson = Person.create(fileContents[1]);
+
 firstPerson.sayName();
+secondPerson.sayName();
 
 //console.log(fileContents[0].age);
