@@ -1,8 +1,10 @@
 const fs = require('fs');
 
 exports.save = (people, cb) => {
-    fs.writeFile('./data.json', JSON.stringify(people), cb)
-    console.log('Saved');
+    setTimeout(() => {
+        fs.writeFile('./data.json', JSON.stringify(people), cb)
+        console.log('Saved');
+    }, 5000);
 }
 
 exports.load = (file) => {
