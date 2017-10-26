@@ -25,7 +25,9 @@ const readFile = (filename) => {
 }
 
 readFile(files[0])
+    .then(console.log)
     .then(() => readFile(files[1]))
     .then(console.log)
-    // .then(() => readFile(file3))
+    .then(() => readFile(files[2]))
+    .then(console.log)
     .then(() => console.log('finished'))
