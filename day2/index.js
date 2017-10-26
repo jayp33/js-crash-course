@@ -18,6 +18,8 @@ const firstPerson = new Person(fileContents[0].name, fileContents[0].age);
 
 const secondPerson = Person.create(fileContents[1]);
 
+fileContents.forEach(someone => Person.create(someone));
+
 firstPerson.sayName();
 secondPerson.sayName();
 
