@@ -14,6 +14,16 @@
 //     })
 // })
 
+const readFile = (filename) => {
+    return new Promise((resolve, reject) => {
+        fs.readFile(filename, 'utf8', (err, contents) => {
+            if (err) return reject(err);
+
+            resolve(contents);
+        });
+    });
+}
+
 readFile(file1)
     .then(() => readFile(file2))
     .then(() => readFile(file3))
